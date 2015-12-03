@@ -1,6 +1,6 @@
 class Place < ActiveRecord::Base
     belongs_to :user
-    belongs_to ;place
+    belongs_to :event
     
     validates :user_id,     presence: true,
                             numericality: {only_integer:true}

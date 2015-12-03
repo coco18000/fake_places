@@ -1,5 +1,5 @@
 class Event < ActiveRecord::Base
-    belomgs_to :user
+    belongs_to :user
     has_many :place
     
     validates :user_id,     presence: true,
